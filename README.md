@@ -19,7 +19,7 @@ Ce projet a été mené par :
 - Gnouyarou Marc-Arthur KADANGHA
 
 ### Structure du projet
-- ``script`` : Dossier qui contient les algorithmes à la fois de classification/clustering ainsi que des utilitaires pour exemple insérer les tweets dans la base de données MongoDB, ...
+- ``script`` : Dossier qui contient les algorithmes à la fois de classification/clustering ainsi que des utilitaires pour par exemple insérer les tweets dans la base de données MongoDB, ...
 - ``data`` : stocke les différents tweets
 - ``requirement.txt`` : récapitule les bibliothèques qui ont besoin d'être installé pour que le projet fonctionne
 - ``docker-compose.yml`` permet de configurer une instance de MongoDB dans un container docker pour un utilisateur mongodb avec pour mot de passe mongo. Le script ``init-mongo.js`` quand à lui permet d'attribuer des droit de lecture et d'écriture sur la base de données configurée par le ``docker-compose.yml``
@@ -40,3 +40,4 @@ docker compose up
 ```
 2. Déposer les tweets dans le dossier ``data`` présent à la racine du projet
 3. Lancer le script présent dans le fichier ``script/utils/importData.ipynb`` pour pouvoir insérer les différents tweets dans la base de données.
+4. Lancer le script présent dans le fichier ``script/utils/createUsers.ipynb`` pour pouvoir isoler les différents utilisateurs et calculer des attributs sur ces derniers.
